@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{%endblock%}</title>
+    <style>
+        .nav{
+            background:#3a3a3a;
+            height:70px
+        }
+        ul{
+            overflow:hidder;
+        }
+        ul li{
+            float:left;
+            list-style:none;
+            padding:0 10px;
+            line-height:70px;
+        }
+        ul li a{
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header">Main</li>
+                        <li><a class="ajax-link" href="home.html"><i
+                                    class="glyphicon glyphicon-align-justify"></i><span> 售票系统</span></a></li>
+                        <li><a class="ajax-link" href="login.html"><i class="glyphicon glyphicon-eye-open"></i><span> 调度系统</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="home.html"><i class="glyphicon glyphicon-calendar"></i><span> 系统管理</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="login.html"><i
+                                    class="glyphicon glyphicon-th"></i><span> 营收结算</span></a></li>
+                        <li><a href="home.html"><i class="glyphicon glyphicon-globe"></i><span> 综合查询</span></a></li>
+                        <li><a class="ajax-link" href="home.html"><i
+                                    class="glyphicon glyphicon-star"></i><span> 报表管理</span></a></li>
+                    </ul>
+    <ul>
+        <li><a href="home.html">INDEX</a></li>
+        <li><a href="login.html">QUESTION</a></li>
+    </ul>
+</div>
+{% block main %}
+{% endblock %}
+</body>
+</html>
